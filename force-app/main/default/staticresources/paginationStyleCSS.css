@@ -1,0 +1,59 @@
+
+.pageButton button.slds-button.slds-button_icon.slds-button_icon-border:focus, .pageButton button.slds-button.slds-button_icon.slds-button_icon-border:hover,
+.nextPrev button.slds-button.slds-button_icon.slds-button_icon-border:focus, .nextPrev button.slds-button.slds-button_icon.slds-button_icon-border:hover
+ {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.currentpage > button.slds-button.slds-button_neutral {
+    background-color: var(--blue-medium, #0131A0) !important;
+    border: .25px solid var(--blue-medium, #0131A0) !important;
+    border-radius: 8px;
+    color: var(--neutral-white, #fff) !important;
+    border: none;
+}
+
+.pageButton button.slds-button.slds-button_neutral, .nextPrev button.slds-button.slds-button_neutral{
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    background-color: var(--neutral-white, #fff);
+    color: var(--neutral-black, #000);
+    border: none;
+    height: 32px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.mobile_Prev button.slds-button.slds-button_neutral {
+    padding: 0px !important;
+    margin-right: 4px !important;
+}
+
+.mobile_Next button.slds-button.slds-button_neutral {
+    padding: 0px !important;
+    margin-left: 4px !important;
+}
+
+.mobileFontSmall button.slds-button.slds-button_neutral {
+    padding: 8px !important;
+    height: 26px !important;
+    border: none;
+}
+
+.disabledColor button.slds-button.slds-button_neutral {
+    color: #B2B2B2 !important;
+}
+
+.accountSwitcherNext button.slds-button.slds-button_neutral{
+    font-weight: 600 !important;
+}
+
+.accountSwitcherPrev button.slds-button.slds-button_neutral{
+    display: none;
+}

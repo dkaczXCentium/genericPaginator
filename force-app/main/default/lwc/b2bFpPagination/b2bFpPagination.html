@@ -1,0 +1,26 @@
+<template>
+    <div class="container">
+        <p>
+            <span>
+                <template lwc:if={desktopOrTablet}>
+                <lightning-button label="Prev" data-id="prev" class="nextPrev prev" variant="neutral" onclick={handlePrevious}  disabled={disableleftarrow}></lightning-button>
+
+                <template for:each={pageList} for:item="p" for:index="index">
+                    <lightning-button class="pageButton" variant="neutral" key={p} label={p} onclick={handleClick} data-index={index}></lightning-button>
+                </template>
+
+                <lightning-button label="Next" data-id="next" class="nextPrev next" variant="neutral" onclick={handleNext} disabled={disablerightarrow}></lightning-button>
+                </template>
+                <template lwc:elseif={mobileDevice}>
+                    <lightning-button label="Prev" data-id="prev" class="nextPrev mobilePrev" variant="neutral" onclick={handlePrevious}  disabled={disableleftarrow}></lightning-button>
+    
+                    <template for:each={pageList} for:item="p" for:index="index">
+                        <lightning-button class="mobilePageButton pageButton" variant="neutral" key={p} label={p} onclick={handleClick} data-index={index}></lightning-button>
+                    </template>
+    
+                    <lightning-button label="Next" data-id="next" class="nextPrev mobileNext" variant="neutral" onclick={handleNext} disabled={disablerightarrow}></lightning-button>
+                    </template>
+            </span>
+        </p>
+    </div>
+</template>
